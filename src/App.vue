@@ -1,11 +1,12 @@
-<script setup></script>
-
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <div class="container-fluid p-0">
+    <Header/>
+    <router-view></router-view>
+  </div>
 </template>
 
-<style scoped></style>
+<script setup>
+import Header from '@/components/layout-folder/Header.vue';
+</script>
+
+<style lang="scss" scoped></style>
